@@ -1,4 +1,4 @@
-import { OptForm } from "../components";
+import { OptForm, Feature } from "../components";
 import { FaqsContainer } from "../containers/faqs";
 import { FooterContainer } from "../containers/footer";
 import { JumbotronContainer } from "../containers/jumbotron";
@@ -8,6 +8,10 @@ export default function Home() {
     return (
         <>
             <HeaderContainer>
+                <Feature>
+                    <Feature.Title>Unlimited movies, TV shows, and more. </Feature.Title>
+                    <Feature.SubTitle>Unlimited movies, TV shows, and more. </Feature.SubTitle>
+                </Feature>
                 <OptForm>
                     <OptForm.Input placeholder="Email Address"></OptForm.Input>
                     <OptForm.Button>Try It Now</OptForm.Button>
