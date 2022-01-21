@@ -14,11 +14,11 @@ export default function Accordion({ children, ...restProps }){
 };
 
 Accordion.Title = function AccordionTitle({ children, ...restProps }) {
-    return <Title {...restProps}></Title>
+    return <Title {...restProps}>{children}</Title>
 };
 
 Accordion.Frame = function AccordionFrame({ children, ...restProps }) {
-    return <Frame {...restProps}></Frame>
+    return <Frame {...restProps}>{children}</Frame>
 };
 
 Accordion.Item = function AccordionItem({ children, ...restProps }) {
@@ -36,6 +36,11 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
     return (
         <Header onClick={() => setToggleShow((toggleShow) => !toggleShow)} {...restProps}>
             {children}
+            {toggleShow ? (
+                <img src="/images/icons/close-slim.png" alt="Close" />
+            ) : (
+                <img src="/images/icons/add.png" alt="Open" />
+            )}
         </Header>
     );
 };
