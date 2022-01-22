@@ -5,8 +5,8 @@ import { Form } from "../components";
 
 export default function Signin() {
 
-    const [emailAddress, setEmailAddress] = useState();
-    const [password, setPassword] = useState();
+    const [emailAddress, setEmailAddress] = useState("");
+    const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
     const isInvalid = password === "" || emailAddress === "";
@@ -20,20 +20,27 @@ export default function Signin() {
         <Form>
             <Form.Title>Sign In</Form.Title>
             {error && <Form.Error>{error}</Form.Error>}
-            <Form.Base onSubmit={handleSignIn} method="POST">Sign In</Form.Base>
-            <Form.Input 
-                placeholder="Email address" 
-                value={emailAddress} 
-                onChange={({target}) => setEmailAddress(target.value)} />
-            <Form.Input 
-                autoComplete="off"
-                type="password"
-                placeholder="Password" 
-                value={password} 
-                onChange={({target}) => setPassword(target.value)} />
-            <Form.Submit disable={isInvalid} type="submit">
-                Sign In
-            </Form.Submit>
+                <Form.Base onSubmit={handleSignIn} method="POST">
+                    <Form.Input 
+                        placeholder="Email address" 
+                        value={emailAddress} 
+                        onChange={({target}) => setEmailAddress(target.value)} />
+                    <Form.Input 
+                        autoComplete="off"
+                        type="password"
+                        placeholder="Password" 
+                        value={password} 
+                        onChange={({target}) => setPassword(target.value)} />
+                    <Form.Submit disable={isInvalid} type="submit">
+                        Sign In
+                    </Form.Submit>
+                </Form.Base>
+            <Form.Text>
+                New to Webflix? <Form.Link to="/signup">Sign up now.</Form.Link>
+            </Form.Text>
+            <Form.TextSmall>
+                This page is protected by Google reCAPTCHA to ensure you're not a bot.
+            </Form.TextSmall>
         </Form>
     </HeaderContainer>
     <FooterContainer></FooterContainer>
