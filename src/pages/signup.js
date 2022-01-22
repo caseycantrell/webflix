@@ -8,7 +8,7 @@ import * as ROUTES from "../constants/routes";
 
 export default function Signup() {
 
-    const history = useNavigate();
+    const navigate = useNavigate();
     const { firebase } = useContext(FirebaseContext);
 
     const [ firstName, setFirstName ] = useState("");
@@ -20,7 +20,22 @@ export default function Signup() {
 
     const handleSignUp = (event) => {
         event.preventDefault();
-    }
+        firebase
+            .auth()
+            .createUserWithEmailAndPassword(emailAddress, password)
+            .then((result) => result.user.updateProfile({
+                displayName: firstName,
+                photoURL: Math.floor(Math.random() * 5) + 1
+            }).then(() => {
+                navigate(ROUTES.BROWSE);
+            }).catch((error) => {
+                setFirstName("");
+                setEmailAddress("");
+                setPassword("");
+                setError(error.message);
+            })
+        );
+    };
 
     return (
     <>
@@ -59,7 +74,7 @@ export default function Signup() {
                 </Form.Base>
             </Form>
         </HeaderContainer>
-        
+
         <FooterContainer />
     </>
     );
