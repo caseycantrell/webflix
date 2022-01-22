@@ -9,7 +9,7 @@ export const Error = styled.div`
 
 `;
 
-export const Base = styled.div`
+export const Base = styled.form`
 
 `;
 
