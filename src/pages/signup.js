@@ -6,7 +6,7 @@ import { Form } from "../components";
 import { useNavigate } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 
-export default function Signup() {
+export default function SignUp() {
 
     const navigate = useNavigate();
     const { firebase } = useContext(FirebaseContext);
