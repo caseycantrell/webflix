@@ -10,6 +10,16 @@ export function SelectProfileContainer({ user, setProfile }) {
                 <Header.Logo to={ROUTES.HOME} src={logo} alt="Webflix" />
             </Header.Frame>
         </Header>
+
+        <Profiles>
+            <Profiles.Title>Who's watching?</Profiles.Title>
+            <Profiles.List>
+                <Profiles.User>
+                    <Profiles.Picture src={user.photoURL} />
+                    <Profiles.Name>{user.displayName}</Profiles.Name>
+                </Profiles.User>
+            </Profiles.List>
+        </Profiles>
     </>
     );
 };
