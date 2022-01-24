@@ -4,9 +4,10 @@ import { useContext, useState, useEffect } from "react";
 import { Loading, Header } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
-import { Picture } from "../components/header/styles/header";
 
 export function BrowseContainer({ slides }) {
+
+    const [searchTerm, setSearchTerm] = useState("");
 
     const [profile, setProfile] = useState({});
 
@@ -33,6 +34,7 @@ export function BrowseContainer({ slides }) {
                         <Header.TextLink>Movies</Header.TextLink>
                     </Header.Group>
                     <Header.Group>
+                        <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                         <Header.Profile>
                             <Header.Picture src={user.photoURL} />
                             <Header.Dropdown>
