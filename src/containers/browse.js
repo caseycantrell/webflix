@@ -4,6 +4,7 @@ import { useContext, useState, useEffect } from "react";
 import { Loading, Header } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
+import { Picture } from "../components/header/styles/header";
 
 export function BrowseContainer({ slides }) {
 
@@ -38,6 +39,9 @@ export function BrowseContainer({ slides }) {
                                 <Header.Group>
                                     <Header.Picture src={user.photoURL} />
                                     <Header.TextLink>{user.displayName}</Header.TextLink>
+                                </Header.Group>
+                                <Header.Group>
+                                    <Header.TextLink onClick={() => firebase.auth().signOut()} >Sign Out</Header.TextLink>
                                 </Header.Group>
                             </Header.Dropdown>
                         </Header.Profile>
