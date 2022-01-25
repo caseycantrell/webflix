@@ -112,7 +112,7 @@ export const Meta = styled.div`
     position: absolute;
     bottom: 0;
     padding: 10px;
-    background-color: #00000008F;
+    background-color: #0000008F;
 
 `;
 
