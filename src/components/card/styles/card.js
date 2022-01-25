@@ -59,3 +59,7 @@ export const Image = styled.img`
 export const Item = styled.div`
 
 `;
+
+export const Feature = styled.div`
+
+`;
