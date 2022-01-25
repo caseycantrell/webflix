@@ -35,30 +35,30 @@ export const Close = styled.button`
     top: 15px;
     width: 22px;
     height: 22px;
-    opacity: 0.3;
+    opacity: 0.5;
     background-color: transparent;
     border: 0;
     cursor: pointer;
-
+    
     &:hover {
-        opacity: 1;
+    opacity: 1;
     }
-
+    
     &:before,
-    &:hover {
+    &:after {
         position: absolute;
         left: 10px;
         top: 0;
         content: ' ';
         height: 22px;
-        width: 22px;
+        width: 2px;
         background-color: #333;
     }
 
     &:before {
         transform: rotate(45deg);
     }
-
+    
     &:after {
         transform: rotate(-45deg);
     }
