@@ -1,5 +1,5 @@
 import { Link as ReactRouterLink } from "react-router-dom";
-import { Background, ButtonLink, Container, Logo, Feature, FeatureCallOut, Text, Link, Group, Picture, Profile, Dropdown, Search, SearchIcon, SearchInput } from './styles/header'
+import { Background, ButtonLink, Container, Logo, Feature, FeatureCallOut, Text, Link, Group, Picture, Profile, Dropdown, Search, SearchIcon, SearchInput, PlayButton } from './styles/header'
 import { useState } from "react";
 
 export default function Header({ bg = true, children, ...restProps }) {
@@ -46,19 +46,23 @@ Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps 
         <SearchInput
           value={searchTerm}
           onChange={({ target }) => setSearchTerm(target.value)}
-          placeholder="Search films and series"
+          placeholder="Search movies and TV shows"
           active={searchActive}
         />
       </Search>
     );
   };
-  
+
 Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
     return <Dropdown { ...restProps }>{children}</Dropdown>
 };
 
 Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
     return <Link { ...restProps }>{children}</Link>
+};
+
+Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
+    return <PlayButton { ...restProps }>{children}</PlayButton>
 };
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
