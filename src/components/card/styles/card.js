@@ -19,3 +19,43 @@ export const SubTitle = styled.p`
 export const Text = styled.p`
 
 `;
+
+export const Featured = styled.div`
+
+`;
+
+export const FeatureTitle = styled(Title)`
+
+`;
+
+export const FeatureClose = styled.button`
+
+`;
+
+export const FeatureText = styled.p`
+
+`;
+
+export const Maturity = styled.div`
+
+`;
+
+export const Meta = styled.div`
+
+`;
+
+export const Content = styled.div`
+
+`;
+
+export const Entities = styled.div`
+
+`;
+
+export const Image = styled.img`
+
+`;
+
+export const Item = styled.div`
+
+`;
