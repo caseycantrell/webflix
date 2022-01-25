@@ -1,5 +1,5 @@
-import React, { useState, useContext, createContext } from "react";
-import reactDom from "react-dom";
+import { useState, useContext, createContext } from "react";
+import ReactDOM from "react-dom";
 import { Container, Button, Overlay, Inner, Close } from "./styles/player"
 
 export const PlayerContext = createContext();
@@ -23,8 +23,10 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
                 <video id="webflix-player" controls>
                     <source src={src} type="video/mp4" />
                 </video>
+                <Close />
             </Inner>
-        </Overlay>
+        </Overlay>,
+        document.body
     ) : null;
 };
 
