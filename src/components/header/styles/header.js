@@ -32,13 +32,13 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-    height: 32px;
-    width: 108px;
+    height: 100%;
+    width: 150px;
     margin-right: 40px;
 
     @media (max-width: 1449px) {
-        height: 45px;
-        width: 167px;
+        height: 100%;
+        width: 180px;
     }
 `;
 

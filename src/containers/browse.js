@@ -3,7 +3,7 @@ import { FirebaseContext } from "../context/firebase"
 import { useContext, useState, useEffect } from "react";
 import { Loading, Header, Card } from "../components";
 import * as ROUTES from "../constants/routes";
-import logo from "../logo.svg";
+import webflix from "../webflix.png";
 
 export function BrowseContainer({ slides }) {
 
@@ -37,7 +37,7 @@ export function BrowseContainer({ slides }) {
             <Header src="joker1" dontShowOnSmallViewPort>
                 <Header.Frame>
                     <Header.Group>
-                        <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
+                        <Header.Logo to={ROUTES.HOME} src={webflix} alt="Webflix" />
                         <Header.TextLink active={category === "series" ? "true" : "false"} onClick={() => setCategory("series")}>Shows</Header.TextLink>
                         <Header.TextLink active={category === "films" ? "true" : "false"} onClick={() => setCategory("films")}>Movies</Header.TextLink>
                     </Header.Group>

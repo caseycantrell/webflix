@@ -1,5 +1,5 @@
 import * as ROUTES from "../constants/routes"
-import logo from "../logo.svg"
+import webflix from "../webflix.png"
 import { Header } from "../components"
 import { Profiles } from "../components";
 
@@ -8,7 +8,7 @@ export function SelectProfileContainer({ user, setProfile }) {
     <>
         <Header bg={false}>
             <Header.Frame>
-                <Header.Logo to={ROUTES.HOME} src={logo} alt="Webflix" />
+                <Header.Logo to={ROUTES.HOME} src={webflix} alt="Webflix" />
             </Header.Frame>
         </Header>
 
