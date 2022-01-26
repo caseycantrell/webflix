@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> opens & closes the <Accordion /> component 1`] = `
+<div
+  class="sc-iCfMLu dQMKRu"
+>
+  <div
+    class="sc-furwcr bIToec"
+  >
+    <h1
+      class="sc-crHmcD ljpfVO"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="sc-iqseJM bwAKbr"
+    >
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          What is Webflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          How much does Webflix cost?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          Where can I watch?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          How do I cancel?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          What can I watch on Webflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Accordion /> renders the <Accordion /> with populated data 1`] = `
+<div
+  class="sc-iCfMLu dQMKRu"
+>
+  <div
+    class="sc-furwcr bIToec"
+  >
+    <h1
+      class="sc-crHmcD ljpfVO"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="sc-iqseJM bwAKbr"
+    >
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          What is Webflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          How much does Webflix cost?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          Where can I watch?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          How do I cancel?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          What can I watch on Webflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Accordion /> renders the <Accordion /> with some sweet, sweet data 1`] = `
+<div
+  class="sc-iCfMLu dQMKRu"
+>
+  <div
+    class="sc-furwcr bIToec"
+  >
+    <h1
+      class="sc-crHmcD ljpfVO"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="sc-pVTFL dQgVsI"
+    >
+      <div
+        class="sc-jrQzAO hKxrEF"
+      >
+        What is Webflix?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-pVTFL dQgVsI"
+    >
+      <div
+        class="sc-jrQzAO hKxrEF"
+      >
+        How much does Webflix cost?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-pVTFL dQgVsI"
+    >
+      <div
+        class="sc-jrQzAO hKxrEF"
+      >
+        Where can I watch?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-pVTFL dQgVsI"
+    >
+      <div
+        class="sc-jrQzAO hKxrEF"
+      >
+        How do I cancel?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-pVTFL dQgVsI"
+    >
+      <div
+        class="sc-jrQzAO hKxrEF"
+      >
+        What can I watch on Webflix?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Accordion /> renders the <Accordion /> with tasty data 1`] = `
+<div
+  class="sc-iCfMLu dQMKRu"
+>
+  <div
+    class="sc-furwcr bIToec"
+  >
+    <h1
+      class="sc-crHmcD ljpfVO"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="sc-iqseJM bwAKbr"
+    >
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          What is Webflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          How much does Webflix cost?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          Where can I watch?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          How do I cancel?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-pVTFL dQgVsI"
+      >
+        <div
+          class="sc-jrQzAO hKxrEF"
+        >
+          What can I watch on Webflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -5,7 +5,7 @@ describe("<Footer />", () => {
     it ("renders the <Footer /> with populated data", () => {
         const { container, getByText } = render (
             <Footer>
-            <Footer.Title>Questions? Contact Us.</Footer.Title>
+            <Footer.Title>Questions? Contact us.</Footer.Title>
             <Footer.Break />
             <Footer.Row>
                 <Footer.Column>
