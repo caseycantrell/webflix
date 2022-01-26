@@ -43,7 +43,7 @@ export const Picture = styled.img`
     cursor: pointer;
 `;
 
-export const Item = styled.li`
+export const User = styled.li`
     max-height: 200px;
     max-width: 200px;
     list-style-type: none;
