@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profiles /> Renders the <Profiles /> component with data 1`] = `
+<div
+  class="sc-ehCJOs cFmhFO"
+>
+  <h1
+    class="sc-lcepkR erHrWf"
+  >
+    Who's watching?
+  </h1>
+  <ul
+    class="sc-gGCDDS cSVQTS"
+  >
+    <li
+      class="sc-Galmp javCcL"
+    >
+      <img
+        class="sc-faUpoM dUFagj"
+        data-testid="profile-picture"
+        src="/images/users//images/casey.png.png"
+      />
+      <p
+        class="sc-clIzBv eWFiLO"
+      >
+        Casey
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<Profiles /> renders the <Profiles /> component with data and misc profile img 1`] = `
+<div
+  class="sc-ehCJOs cFmhFO"
+>
+  <h1
+    class="sc-lcepkR erHrWf"
+  >
+    Who's watching?
+  </h1>
+  <ul
+    class="sc-gGCDDS cSVQTS"
+  >
+    <li
+      class="sc-Galmp javCcL"
+    >
+      <img
+        class="sc-faUpoM dUFagj"
+        data-testid="profile-picture-misc"
+        src="/images/users//images/casey.png.png"
+      />
+      <p
+        class="sc-clIzBv eWFiLO"
+      >
+        Casey
+      </p>
+    </li>
+  </ul>
+</div>
+`;
