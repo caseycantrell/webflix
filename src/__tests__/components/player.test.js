@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react";
-import { Player } from "../components";
+import { Player } from "../../components";
 
 describe("<Player />", () => {
     it("renders the player with a bunny video", () => {
@@ -14,7 +14,7 @@ describe("<Player />", () => {
         fireEvent.click(getByText("Play"));
 
         expect(queryByTestId("player")).toBeTruthy();
-        fireEvent.click(getByText("Play"));
+        fireEvent.click(queryByTestId("player"));
 
         expect(queryByTestId("player")).toBeFalsy();
         expect(container.firstChild).toMatchSnapshot();
