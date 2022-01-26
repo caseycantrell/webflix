@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Jumbotron /> renders ye old <Jumbotron /> with data 1`] = `
+<div
+  class="sc-gKclnd hXogEG"
+>
+  <div
+    class="sc-bdvvtL cGjNFb"
+  >
+    <div
+      class="sc-gsDKAQ crzAFp"
+      direction="row"
+    >
+      <div
+        class="sc-dkPtRN bYePld"
+      >
+        <h1
+          class="sc-hKwDye gnjbXq"
+        >
+          Enjoy on your TV.
+        </h1>
+        <h2
+          class="sc-eCImPb foLRQI"
+        >
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+        </h2>
+      </div>
+      <div
+        class="sc-dkPtRN bYePld"
+      >
+        <img
+          alt="Tiger King on Webflix"
+          class="sc-jRQBWg dLnrgV"
+          data-testid="1-jumbo-image"
+          src="/images/misc/home-tv.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-bdvvtL cGjNFb"
+  >
+    <div
+      class="sc-gsDKAQ nqoVQ"
+      direction="row-reverse"
+    >
+      <div
+        class="sc-dkPtRN bYePld"
+      >
+        <h1
+          class="sc-hKwDye gnjbXq"
+        >
+          Download your shows to watch offline.
+        </h1>
+        <h2
+          class="sc-eCImPb foLRQI"
+        >
+          Save favorites easily and always have something to watch.
+        </h2>
+      </div>
+      <div
+        class="sc-dkPtRN bYePld"
+      >
+        <img
+          alt="Watch on mobile"
+          class="sc-jRQBWg dLnrgV"
+          data-testid="2-jumbo-image"
+          src="/images/misc/home-mobile.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-bdvvtL cGjNFb"
+  >
+    <div
+      class="sc-gsDKAQ crzAFp"
+      direction="row"
+    >
+      <div
+        class="sc-dkPtRN bYePld"
+      >
+        <h1
+          class="sc-hKwDye gnjbXq"
+        >
+          Watch everywhere.
+        </h1>
+        <h2
+          class="sc-eCImPb foLRQI"
+        >
+          Stream unlimited movies and TV shows on your phone, tablet, laptop and TV without paying more.
+        </h2>
+      </div>
+      <div
+        class="sc-dkPtRN bYePld"
+      >
+        <img
+          alt="Money Heist on Webflix"
+          class="sc-jRQBWg dLnrgV"
+          data-testid="3-jumbo-image"
+          src="/images/misc/home-imac.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
