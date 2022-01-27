@@ -69,5 +69,8 @@
       "html",
       "text"
     ]
+  },
+  "devDependencies": {
+    "netlify-cli": "^8.14.1"
   }
 }

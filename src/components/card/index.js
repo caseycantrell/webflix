@@ -1,7 +1,7 @@
 import { useState, useContext, createContext } from "react/cjs/react.development";
 import { Container, Group, Title, SubTitle, Text, Feature, FeatureTitle, FeatureText, FeatureClose, Maturity, Content, Meta, Entities, Item, Image } from "./styles/card";
 
-export const FeatureContext = createContext();
+
 
 export default function Card({ children, ...restProps }) {
     const [showFeature, setShowFeature] = useState(false);
@@ -61,6 +61,8 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
         </Feature>
     ) : null;
 };
+
+export const FeatureContext = createContext();
 
 Card.Item = function CardItem({ item, children, ...restProps }) {
     const { setShowFeature, setItemFeature } = useContext(FeatureContext);
