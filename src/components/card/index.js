@@ -1,18 +1,18 @@
-import { useState, useContext, createContext } from "react/cjs/react.development";
+import { useState, useContext, createContext } from "react";
 import { Container, Group, Title, SubTitle, Text, Feature, FeatureTitle, FeatureText, FeatureClose, Maturity, Content, Meta, Entities, Item, Image } from "./styles/card";
 
-
+export const FeatureContext = createContext();
 
 export default function Card({ children, ...restProps }) {
     const [showFeature, setShowFeature] = useState(false);
     const [itemFeature, setItemFeature] = useState({});
-
+  
     return (
         <FeatureContext.Provider value={{ showFeature, setShowFeature, itemFeature, setItemFeature }}>
-            <Container { ...restProps }>{children}</Container>
+            <Container {...restProps}>{children}</Container>
         </FeatureContext.Provider>
     );
-};
+  };
 
 Card.Group = function CardGroup({ children, ...restProps }) {
     return <Group { ...restProps }>{children}</Group>
@@ -36,6 +36,17 @@ Card.Meta = function CardMeta({ children, ...restProps }) {
 
 Card.Entities = function CardEntities({ children, ...restProps }) {
     return <Entities { ...restProps }>{children}</Entities>
+};
+
+Card.Item = function CardItem({ item, children, ...restProps }) {
+    const { setShowFeature, setItemFeature } = useContext(FeatureContext);
+
+    return (
+        <Item onClick={() => {
+            setItemFeature(item);
+            setShowFeature(true);
+        }} { ...restProps }>{children}</Item>
+    );
 };
 
 Card.Feature = function CardFeature({ children, category, ...restProps }) {
@@ -62,19 +73,10 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
     ) : null;
 };
 
-export const FeatureContext = createContext();
-
-Card.Item = function CardItem({ item, children, ...restProps }) {
-    const { setShowFeature, setItemFeature } = useContext(FeatureContext);
-
-    return (
-        <Item onClick={() => {
-            setItemFeature(item);
-            setShowFeature(true);
-        }} { ...restProps }>{children}</Item>
-    );
-};
-
 Card.Image = function CardImage({ ...restProps }) {
     return <Image { ...restProps } />
 };
+
+
+
+
