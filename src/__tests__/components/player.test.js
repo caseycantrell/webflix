@@ -2,11 +2,11 @@ import { render, fireEvent } from "@testing-library/react";
 import { Player } from "../../components";
 
 describe("<Player />", () => {
-    it("renders the player with a bunny video", () => {
+    it("renders the player with a dummy video", () => {
         const { container, getByText, queryByTestId } = render(
             <Player>
                 <Player.Button />
-                <Player.Video src="/videos/bunny.mp4" />
+                <Player.Video src="/videos/webflix.mp4" />
             </Player>
         );
 

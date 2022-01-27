@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Player /> renders the player with a bunny video 1`] = `
+exports[`<Player /> renders the player with a dummy video 1`] = `
 <div
   class="sc-kHOZwM fIHJWb"
 >
