@@ -1,6 +1,6 @@
 # Welcome to Webflix, a clone of a popular video streaming service created with React and Firebase.
 
-
+![Webflix](https://web-flix.netlify.app/static/media/webflix.b3a2269c88bdc931e9d9.png)
 
 Check out the deployed version [here](https://web-flix.netlify.app).
 
